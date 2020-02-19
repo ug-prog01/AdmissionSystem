@@ -1,4 +1,4 @@
-# ChocolateMachine2
+# Admission System
 
 To begin on your local machine, first install npm and node js https://nodejs.org/ (the .msi file installs both!)
 

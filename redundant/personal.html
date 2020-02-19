@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>INFO</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <body>
+
+    <form id="form2">
+      <label>First Name
+        <input type="text" name="First_Name" pattern="[a-zA-Z]{0,15}"/>
+      </label>
+      <label>Middle Name
+        <input type="text" name="Middle_Name" pattern="[a-zA-Z]{0,15}"/>
+      </label>
+      <label>Last Name
+        <input type="text" name="Last_Name" pattern="[a-zA-Z]{0,15}"/>
+      </label>
+      <label>Mother's Name
+        <input type="text" name="Mother_Name" pattern="[a-zA-Z]{0,15}"/>
+      </label>
+      <label>Date Of Birth
+        <input type="date" name="Birthday_Day">
+      </label>
+      <label>Email
+        <input type="text" name="Email_Id" maxlength="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" />
+      </label>
+      <label>Mobile Number
+        <input type="text" name="Mobile_Number" pattern="[0-9]{10}" />
+      </label>
+      <label>Aadhar Number
+        <input type="text" name="Aadhar Number" pattern="[0-9]{12}" />
+      </label>
+      <label>Gender :<br>
+        Male <input type="radio" name="Gender" value="Male" /><br>
+        Female <input type="radio" name="Gender" value="Female" />
+      </label>
+      <label>Address
+        <textarea name="Address" rows="4" cols="30"></textarea>
+      </label>
+      <label>City
+        <input type="text" name="City" pattern="[a-zA-Z]{0,20}" />
+      </label>
+      <label>State
+        <input type="text" name="State" pattern="[a-zA-Z]{0,20}" />
+      </label>
+      <label>Pincode
+        <input type="text" name="Pin_Code" pattern="[0-9]{6}" />
+      </label>
+      <label>Category :<br>
+        Open <input type="radio" name="Category1" value="OPEN" /><br>
+        Reserved <input type="radio" name="Category1" value="RESERVED"/>
+      </label>
+      <label>SubCategory
+        <select name="Category">
+          <option value="SC">SC</option>
+          <option value="ST">ST</option>
+          <option value="DT(A)">DT(A)</option>
+          <option value="NT(B)">NT(B)</option>
+          <option value="NT(A/NT)(C)">NT(A/NT)(C)</option>
+          <option value="NT(D)">NT(D)</option>
+          <option value="OBC">OBC</option>
+          <option value="SBC">SBC</option>
+          <option value="EBC">EBC</option>
+        </select>
+      </label>
+      <label>State of Domicile
+        <select name="Category2">
+          <option value="Maharashtra">Maharashtra</option>
+          <option value="Out of Maharashtra">Out of Maharashtra</option>
+        </select>
+      </label>
+      <button>Submit</button>
+    </form>
+
+    <script src="js/send1.js"></script>
+  </body>
+</html>

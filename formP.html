@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    View Forms | Admin Module
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/css/now-ui-dashboard.css?v=1.1.0" rel="stylesheet" />
+</head>
+
+<body class>
+  <div class="wrapper ">
+    <div class="sidebar" data-color="black">
+      <div class="logo simple-text logo-mini">
+        <a href="#" class="simple-text logo-mini">
+          AM
+        </a>
+        <a href="#" class="simple-text logo-normal">
+          ADMIN MODULE
+        </a>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li>
+            <a href="admin.html">
+              <i class="now-ui-icons design_app"></i>
+              <p><div class="font-icon-detail">Dashboard</div></p>
+            </a>
+          </li>
+          <li>
+            <a href="pending.html">
+              <i class="now-ui-icons users_single-02"></i>
+              <p>Confirmation Pending</p>
+            </a>
+          </li>
+        <li>
+          <li>
+            <a href="formP.html">
+              <i class="now-ui-icons users_single-02"></i>
+              <p>View Forms</p>
+            </a>
+          </li>
+          <li>
+            <a href="confirmed.html">
+              <i class="now-ui-icons users_single-02"></i>
+              <p>Confirmed</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute bg-primary fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            <a class="navbar-brand" href="#pablo">Dashboard</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navigation">
+
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="now-ui-icons location_world"></i>
+                  <p>
+                    <span class="d-lg-none d-md-block">Some Actions</span>
+                  </p>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="index.html">Logout</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+    <div class="panel-header panel-header-sm">
+      </div>
+      <div class="content">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h2 class="title">
+                  <p id="para"></p>
+                </h2>
+              </div>
+              <div class="card-body">
+                <form id="submit">
+                  <div class="row">
+                    <div class="col-md-6 pr-1">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="user"  pattern="[a-zA-Z0-9]{1,15}" placeholder="Enter the username"/>
+                      </div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                        <button class="btn-primary btn" id="view">View Form</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+<!-- Personal Info -->
+                <form id="form">
+                  <h3 class="title">
+                    <p>Personal Information</p>
+                  </h3>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" class="form-control"  name="First_Name" pattern="[a-zA-Z]{0,15}"/>
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label>Father's Name</label>
+                        <input type="text" class="form-control" name="Middle_Name"  pattern="[a-zA-Z]{0,15}"/>
+                      </div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text" class="form-control" name="Last_Name"  pattern="[a-zA-Z]{0,15}"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 pr-1">
+                      <div class="form-group">
+                        <label>Mother's Name</label>
+                        <input type="text" class="form-control" name="Mother_Name"  pattern="[a-zA-Z]{0,15}"/>
+                      </div>
+                    </div>
+                    <div class="col-md-6 pl-1">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control"  name="Email_Id">
+                      </div>
+                    </div>
+                  </div>
+ <!-- Academic Info  -->
+                  <h4 class="title">10th</h4>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Total(10th)</label>
+                        <input type="text" class="form-control" pattern="[0-9]{3}"  name="Total_10th">
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label>Out of(10th)</label>
+                        <input type="text" class="form-control" pattern="[0-9]{3}"  name="Out_of10th">
+                      </div>
+                    </div>
+                  </div>
+                  <h4 class="title">12th</h4>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Total(12th)</label>
+                        <input type="text" class="form-control" pattern="[0-9]{3}"  name="Total_12th"/>
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label>Out of(12th)</label>
+                        <input type="text" class="form-control" pattern="[0-9]{3}"  name="Out_off_12th">
+                      </div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                      </div>
+                    </div>
+                  </div>
+                  <h4 class="title">CET</h4>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Total(CET)</label>
+                        <input type="text" class="form-control" pattern="[0-9]{3}"  name="Total_CET"/>
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group"></div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                      </div>
+                    </div>
+                  </div>
+                  <h4 class="title">JEE</h4>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Total(JEE)</label>
+                        <input type="text" class="form-control" pattern="[0-9]{1,3}"  name="Total_JEE">
+                      </div>
+                    </div>
+                  </div>
+<!-- Bank Info -->
+                  <h4 class="title">Bank Details</h4>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Bank Name</label>
+                        <input type="text" class="form-control" pattern="[a-zA-Z]{2,15}"  name="Bank_name"/>
+                      </div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                        <label>Branch Name</label>
+                        <input type="text" class="form-control" pattern="[a-zA-Z]{2,15}"  name="Branch_name">
+                      </div>
+                    </div>
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Account Number</label>
+                        <input type="text" class="form-control" pattern="[A-Z0-9]{10,15}"  name="Acc_no"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>IFSC</label>
+                        <input type="text" class="form-control" pattern="[A-Z0-9]{10,15}"  name="IFSC">
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label>MICR</label>
+                        <input type="text" class="form-control" pattern="[A-Z0-9]{10,15}"  name="MICR">
+                      </div>
+                    </div>
+                  </div>
+<!-- Parent Info -->
+                  <h4 class="title">Parent/Guardian Details</h4>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" class="form-control" pattern="[A-Za-z]{1,15}"  name="Full_name"/>
+                      </div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="text" class="form-control" pattern="[0-9]{10}"  name="Contact">
+                      </div>
+                    </div>
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control"  name="Email_parent"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Occupation</label>
+                        <input type="text" class="form-control" pattern="[A-Za-z]{1,15}"  name="Occupation">
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label>Office Address</label>
+                        <input type="text" class="form-control" pattern="[A-Za-z0-9,-]{1,150}"  name="Office_add">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Roll No</label>
+                        <input type="text" class="form-control" pattern="[A-Z0-9]{1,15}"  name="A_Roll">
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <button class="btn btn-block" name="Confirm">Confirm</button>
+                      </div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                        <button class="btn btn-block" id="del">Delete</button>
+                      </div>
+                    </div>
+                  </div>
+                  <h4 class="title">Documents Submitted</h4>
+                  <h4 class="title">Documents</h4>
+                    <div class="row">
+                      <div class="col-md-4 pr-1">
+                        <div class="form-group">
+                          <label>CAP Allotment Letter</label>
+                          <img id="CAP">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4 pr-1">
+                        <div class="form-group">
+                          <label>Marksheet 10</label>
+                          <img id="MK 10">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4 pr-1">
+                        <div class="form-group">
+                          <label>Marksheet 12</label>
+                          <img id="MK 12">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4 pr-1">
+                        <div class="form-group">
+                          <label>Leaving Certificate</label>
+                          <img id="LC">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4 pr-1">
+                        <div class="custom-file">
+                          <label>Domicile Certificate / Nationality</label>
+                          <img id="Nation">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4 pr-1">
+                        <div class="form-group">
+                          <label>Caste Certificate (if applicable)</label>
+                          <img id="Caste">
+                        </div>
+                      </div>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="assets/js/core/jquery.min.js"></script>
+  <script src="assets/js/core/bootstrap.min.js"></script>
+  <script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="assets/js/now-ui-dashboard.min.js?v=1.1.0" type="text/javascript"></script>
+  <script src="js/formsP.js"></script>
+</body>
+
+</html>

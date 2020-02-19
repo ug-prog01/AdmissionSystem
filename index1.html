@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Admission System</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    font {
+      font-size:40px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <CENTER>
+  <font align="center" color="white" face="georgia">ADMISSION PORTAL</font></CENTER>
+  <div class="panel">
+    <ul class="panel__menu" id="menu">
+      <hr/>
+      <li id="signIn"> <a href="#">Login</a></li>
+      <li id="signUp"><a href="#">Sign up</a></li>
+    </ul>
+    <div class="panel__wrap">
+
+      <div class="panel__box active" id="signInBox">
+        <label>Email
+          <input type='email' form="form32" id='2USENAME'>
+        </label>
+        <label>Password
+          <input type='password' form="form32" id='2PASS'>
+        </label>
+        <input type="submit" id="login"/>
+      </div>
+
+      <div class="panel__box" id="signUpBox">
+        <label>Username
+          <input type='text' minlength="4" form="form32" id='USENAME'>
+        </label>
+        <label>Password
+          <input type='password' minlength="4" form="form32" id='PASS'>
+        </label>
+        <label>Email
+    			<input type='email' minlength="8" form="form32" id='EMAIL'>
+        </label>
+        <label>Phone
+          <input type='number' minlength="10" maxlength="10" form="form32" id='PHONE'>
+        </label>
+        <input type="submit" id="sign"/>
+      </div>
+    </div>
+  </div>
+
+  <button class="enclose problem" id="sry">SORRY</button>
+
+  <script  src="js/index.js"></script>
+  <script  src="js/send.js"></script>
+
+
+</body>
+
+</html>

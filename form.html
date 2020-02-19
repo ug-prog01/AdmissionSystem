@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Application Form | User Module
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/css/now-ui-dashboard.css?v=1.1.0" rel="stylesheet" />
+</head>
+
+<body class="">
+  <div class="wrapper ">
+    <div class="sidebar" data-color="orange">
+      <div class="logo simple-text logo-mini">
+        <a href="#" class="simple-text logo-mini">
+          AS
+        </a>
+        <a href="#" class="simple-text logo-normal">
+          Admission System
+        </a>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li>
+            <a href="dashboard.html">
+              <i class="now-ui-icons design_app"></i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li>
+            <a href="user.html">
+              <i class="now-ui-icons users_single-02"></i>
+              <p>User Profile</p>
+            </a>
+          </li>
+          <li class="active ">
+            <a href="form.html">
+              <i class="now-ui-icons users_single-02"></i>
+              <p>Your Form</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute bg-primary fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            <a class="navbar-brand" href="#pablo">Dashboard</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navigation">
+
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="now-ui-icons location_world"></i>
+                  <p>
+                    <span class="d-lg-none d-md-block">Some Actions</span>
+                  </p>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="index.html">Logout</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+    <div class="panel-header panel-header-sm">
+      </div>
+      <div class="content">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="title">
+                  <p id="para">Personal Information</p>
+                </h5>
+              </div>
+              <div class="card-body">
+<!-- Personal Info -->
+                <form id="formPersonal">
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" class="form-control" required="required" name="First_Name" pattern="[a-zA-Z]{0,15}"/>
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label>Father's Name</label>
+                        <input type="text" class="form-control" name="Middle_Name" required="required" pattern="[a-zA-Z]{0,15}"/>
+                      </div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text" class="form-control" name="Last_Name" required="required" pattern="[a-zA-Z]{0,15}"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 pr-1">
+                      <div class="form-group">
+                        <label>Mother's Name</label>
+                        <input type="text" class="form-control" name="Mother_Name" required="required" pattern="[a-zA-Z]{0,15}"/>
+                      </div>
+                    </div>
+                    <div class="col-md-6 pl-1">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" required="required" name="Email_Id">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label>Address</label>
+                        <textarea class="form-control" required="required" name="Address" rows="4" cols="30"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>City</label>
+                        <input type="text" class="form-control" name="City" required="required" pattern="[a-zA-Z]{0,20}" />
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label>State</label>
+                        <input type="text" class="form-control" name="State" required="required" pattern="[a-zA-Z]{0,20}" />
+                      </div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                        <label>Postal Code</label>
+                        <input type="number" class="form-control" name="Pin_Code" required="required" pattern="[0-9]{6}" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Phone</label>
+                        <input type="number" class="form-control" name="Mobile_Number" required="required" pattern="[0-9]{10}" />
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label>Aadhar Number</label>
+                        <input type="number" class="form-control" name="Aadhar Number" required="required" pattern="[0-9]{12}" />
+                      </div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                        <label>Gender</label>
+                        <select name="Gender" class="form-control">
+                          <option value="M" class="form-control">Male</option>
+                          <option value="F" class="form-control">Female</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Date Of Birth</label>
+                        <input type="date" class="form-control" required="required" name="Birthday_Day">
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label>Category</label>
+                        <select name="Category1" required="required" class="form-control">
+                          <option value="OPEN" data-toggle="collapse">OPEN</option>
+                          <option value="RESERVED" data-toggle="collapse">RESRVED</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                        <label>Sub - Category</label>
+                        <select name="Category" required="required" class="form-control">
+                          <option value="N/A">N/A</option>
+                          <option value="SC" class="form-control">SC</option>
+                          <option value="ST" class="form-control">ST</option>
+                          <option value="DT(A)" class="form-control">DT(A)</option>
+                          <option value="NT(B)" class="form-control">NT(B)</option>
+                          <option value="NT(A/NT)(C)" class="form-control">NT(A/NT)(C)</option>
+                          <option value="NT(D)" class="form-control">NT(D)</option>
+                          <option value="OBC" class="form-control">OBC</option>
+                          <option value="SBC" class="form-control">SBC</option>
+                          <option value="EBC" class="form-control">EBC</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>State of Domicile</label>
+                        <select name="Category2" required="required" class="form-control">
+                          <option value="Maharashtra" class="form-control">Maharashtra</option>
+                          <option value="Out of Maharashtra" class="form-control">Out of Maharashtra</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label>Branch</label>
+                        <select name="Branch" required="required" class="form-control">
+                          <option value="IT">Information Technology</option>
+                          <option value="E&TC" class="form-control">Electronics & TeleCommunications</option>
+                          <option value="MECH" class="form-control">Mechanical</option>
+                          <option value="COMP" class="form-control">Computer</option>
+                          <option value="INSTRU" class="form-control">Intrumentation</option>
+                          <option value="CIVIL" class="form-control">Civil</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <button class="btn" id="Personal">Academic Info</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+
+ <!-- Academic Info  -->
+                <form id="formAca">
+                  <h4 class="title">10th</h4>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Roll No(10th)</label>
+                        <input type="text" class="form-control" pattern="[0-9A-Z]{1,15}" required="required" name="Roll_no_10th"/>
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label>Year of Passing(10th)</label>
+                        <input type="text" class="form-control" pattern="[0-9]{4}" required="required" name="YOP_10th">
+                      </div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                        <label>Board(10th)</label>
+                        <input type="text" class="form-control" pattern="[a-zA-Z]{1,15}" required="required" name="Board_10th">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Maths(10th)</label>
+                        <input type="text" class="form-control" pattern="[0-9]{1,2}" required="required" name="Maths_10th"/>
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label>Total(10th)</label>
+                        <input type="text" class="form-control" pattern="[0-9]{3}" required="required" name="Total_10th">
+                      </div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                        <label>Out of(10th)</label>
+                        <input type="text" class="form-control" pattern="[0-9]{3}" required="required" name="Out_of10th">
+                      </div>
+                    </div>
+                  </div>
+                  <h4 class="title">12th</h4>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Roll No(12th)</label>
+                        <input type="text" class="form-control" pattern="[0-9A-Z]{0,15}" required="required" name="Roll_no12th"/>
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label>Year of Passing(12th)</label>
+                        <input type="text" class="form-control" pattern="[0-9]{4}" required="required" name="YOP_12th">
+                      </div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                        <label>Board(12th)</label>
+                        <input type="text" class="form-control" pattern="[a-zA-Z]{1,15}" required="required" name="Board_12th">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Physics(12th)</label>
+                        <input type="text" class="form-control" pattern="[0-9]{1,2}" required="required" name="Phy_12th"/>
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label>Chemistry(12th)</label>
+                        <input type="text" class="form-control" pattern="[0-9]{1,2}" required="required" name="Chem_12th">
+                      </div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                        <label>Maths(10th)</label>
+                        <input type="text" class="form-control" pattern="[0-9]{1,2}" required="required" name="Maths_12th">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Total(12th)</label>
+                        <input type="text" class="form-control" pattern="[0-9]{3}" required="required" name="Total_12th"/>
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label>Out of(12th)</label>
+                        <input type="text" class="form-control" pattern="[0-9]{3}" required="required" name="Out_off_12th">
+                      </div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                      </div>
+                    </div>
+                  </div>
+                  <h4 class="title">CET</h4>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Roll No(CET)</label>
+                        <input type="text" class="form-control" pattern="[0-9A-Z]{1,15}" required="required" name="Roll_no"/>
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label>Year of Passing(CET)</label>
+                        <input type="text" class="form-control" pattern="[0-9]{4}" required="required" name="YOP_CET">
+                      </div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                        <label>Board(CET)</label>
+                        <input type="text" class="form-control" pattern="[a-zA-Z]{3,15}" required="required" name="Board_CET">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Physics(CET)</label>
+                        <input type="text" class="form-control" pattern="[0-9]{1,2}" required="required" name="Phy_CET"/>
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label>Chemistry(CET)</label>
+                        <input type="text" class="form-control" pattern="[0-9]{1,2}" required="required" name="Chem_CET">
+                      </div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                        <label>Maths(CET)</label>
+                        <input type="text" class="form-control" pattern="[0-9]{1,2}" required="required" name="Math_CET">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Total(CET)</label>
+                        <input type="text" class="form-control" pattern="[0-9]{3}" required="required" name="Total_CET"/>
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group"></div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                      </div>
+                    </div>
+                  </div>
+                  <h4 class="title">JEE</h4>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Roll No(JEE)</label>
+                        <input type="text" class="form-control" pattern="[0-9A-Z]{1,15}" required="required" name="Roll_no_JEE"/>
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label>Year of Passing(JEE)</label>
+                        <input type="text" class="form-control" pattern="[0-9]{4}" required="required" name="YOP_JEE">
+                      </div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                        <label>Physics(JEE)</label>
+                        <input type="text" class="form-control" pattern="[0-9]{1,2}" required="required" name="Phy_JEE">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Chemistry(JEE)</label>
+                        <input type="text" class="form-control" pattern="[0-9]{1,2}" required="required" name="Chem_JEE"/>
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label>Maths(JEE)</label>
+                        <input type="text" class="form-control" pattern="[0-9]{1,2}" required="required" name="Maths_JEE">
+                      </div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                        <label>Total(JEE)</label>
+                        <input type="text" class="form-control" pattern="[0-9]{1,3}" required="required" name="Total_JEE">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <button class="btn" id="back_to_P">Personal Info</button>
+                      </div>
+                    </div>
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <button class="btn" id="Academic">Bank Info</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+<!-- Bank Info -->
+                <form id="formBank">
+                  <h4 class="title">Your Bank Details</h4>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Bank Name</label>
+                        <input type="text" class="form-control" pattern="[a-zA-Z]{2,15}" required="required" name="Bank_name"/>
+                      </div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                        <label>Branch Name</label>
+                        <input type="text" class="form-control" pattern="[a-zA-Z]{2,15}" required="required" name="Branch_name">
+                      </div>
+                    </div>
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Account Number</label>
+                        <input type="text" class="form-control" pattern="[A-Z0-9]{10,15}" required="required" name="Acc_no"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>IFSC</label>
+                        <input type="text" class="form-control" pattern="[A-Z0-9]{10,15}" required="required" name="IFSC">
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label>MICR</label>
+                        <input type="text" class="form-control" pattern="[A-Z0-9]{10,15}" required="required" name="MICR">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <button class="btn" id="back_to_E">Academic Info</button>
+                      </div>
+                    </div>
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <button class="btn" id="bank">Parent / Guardian Info</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+<!-- Parent Info -->
+                <form id="formParent">
+                  <h4 class="title">Parent/Guardian Details</h4>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control" pattern="[A-Za-z]{1,15}" required="required" name="Full_name"/>
+                      </div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="text" class="form-control" pattern="[0-9]{10}" required="required" name="Contact">
+                      </div>
+                    </div>
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control" required="required" name="Email_parent"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Occupation</label>
+                        <input type="text" class="form-control" pattern="[A-Za-z]{1,15}" required="required" name="Occupation">
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label>Office Address</label>
+                        <input type="text" class="form-control" required="required" name="Office_add">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <button class="btn" id="back_to_B">Bank Info</button>
+                      </div>
+                    </div>
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <button id="final" class="btn btn-primary btn-block">Submit Form</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+<!-- Docs -->
+                <form id="formDocs" action="http://localhost:4000/upload" method="POST" enctype="multipart/form-data">
+                  <h4 class="title">Documents</h4>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>CAP Allotment Letter</label>
+                        <input type="file" class="form-control" required="required" name="Image">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Marksheet 10</label>
+                        <input type="file" class="form-control-file" name="Image">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Marksheet 12</label>
+                        <input type="file" class="form-control" required="required" name="Image">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Leaving Certificate</label>
+                        <input type="file" class="form-control" required="required" name="Image">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Domicile Certificate / Nationality</label>
+                        <input type="file" class="form-control" required="required" name="Image">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Caste Certificate (if applicable)</label>
+                        <input type="file" class="form-control" required="required" name="Image">
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn">Submit</button>
+                </form>
+<!-- Success -->
+                <form id="success">
+                  <h4 class="title">Form Successfully Submitted!</h4>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <button class="btn" id="view"/>View Form</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="assets/js/core/jquery.min.js"></script>
+  <script src="assets/js/core/bootstrap.min.js"></script>
+  <script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="assets/js/now-ui-dashboard.min.js?v=1.1.0" type="text/javascript"></script>
+  <script src="assets/demo/demo.js"></script>
+  <script src="js/send1.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+
+</html>

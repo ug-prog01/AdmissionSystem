@@ -5,6 +5,10 @@ To begin on your local machine, first install npm and node js https://nodejs.org
 Run 'npm install' command on the terminal in the directory where the files are present.
 
 Make sure to replace the database credentials in the server.js with your credentials.
+
+Refer HTML_Pages folder for preview of all the HTML pages
+
+
 ---
 permalink: /index.html
 ---
